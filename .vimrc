@@ -33,6 +33,10 @@ set autoindent
 "set shiftwidth (the amount indented when '>>' or '<<' is pressed) to 4 spaces
 set shiftwidth=2
 
+"view characters at the end of lines
 set list
+
+"collapse (fold) based on indent level
+set foldmethod=indent
 
 au BufRead, BufNewFile *.jinja setfiletype html 
