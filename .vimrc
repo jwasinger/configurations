@@ -39,4 +39,7 @@ set list
 "collapse (fold) based on indent level
 set foldmethod=indent
 
+"open files with no folds (all text visible)
+set foldlevelstart=99
+
 au BufRead, BufNewFile *.jinja setfiletype html 
