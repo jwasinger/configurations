@@ -42,4 +42,8 @@ set foldmethod=indent
 "open files with no folds (all text visible)
 set foldlevelstart=99
 
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+
 au BufRead, BufNewFile *.jinja setfiletype html 
