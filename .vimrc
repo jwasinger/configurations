@@ -46,4 +46,8 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 
+"scroll with j/k when searching through autocomplete options
+inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
+inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
+
 au BufRead, BufNewFile *.jinja setfiletype html 
